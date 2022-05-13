@@ -114,7 +114,7 @@ var quotes = [
 ];
 
 function createQuote() {
-  var quoteNumber = parseInt(Math.random() * (quotes.length + 1));
+  var quoteNumber = parseInt(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = quotes[quoteNumber].quote;
   document.getElementById(
     "author"
